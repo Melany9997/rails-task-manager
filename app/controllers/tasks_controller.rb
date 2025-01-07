@@ -15,6 +15,7 @@ class TasksController < ApplicationController
   def create
     @tasks = Task.new(params[:task])
   @tasks.save
+  redirect_to tasks_path
   end
 
 end
